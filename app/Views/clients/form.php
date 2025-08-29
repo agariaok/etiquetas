@@ -16,75 +16,8 @@ $transporteActual = $old['transporte'] ?? '';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?= isset($old['id']) ? 'Editar' : 'Nuevo' ?> cliente</title>
-  <style>
-    *{ box-sizing: border-box; }
-    .grid-item{ min-width: 0; }
-
-    body{
-      font-family:'Segoe UI', Roboto, Arial, sans-serif;
-      margin:24px;
-      background: linear-gradient(135deg,#f7f7f7,#eceff1);
-      color:#222;
-    }
-    .card{
-      background:#fff;
-      border-radius:16px;
-      padding:22px;
-      max-width:950px;
-      margin:auto;
-      box-shadow:0 10px 24px rgba(0,0,0,.10);
-      transition:.25s;
-    }
-    .card:hover{ box-shadow:0 14px 30px rgba(0,0,0,.14); }
-    h2{
-      margin:0 0 12px;
-      font-size:1.35rem;
-      border-bottom:2px solid #eef0f3;
-      padding-bottom:10px;
-    }
-
-    form{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:16px 18px;
-      margin-top:10px;
-    }
-    .full{ grid-column: 1 / -1; }
-    .grid-item{ display:flex; flex-direction:column; gap:6px; }
-    label{ font-weight:600; font-size:.92rem; color:#333; }
-
-    input, select{
-      display:block; width:100%; max-width:100%;
-      padding:10px 12px; border:1px solid #cfd8e3; border-radius:10px;
-      background:#fafafa; font-size:.95rem;
-      transition:border-color .2s, box-shadow .2s, background .2s;
-    }
-    input:hover, select:hover{ border-color:#9fb3c8; }
-    input:focus, select:focus{
-      outline:none; background:#fff; border-color:#1976d2; box-shadow:0 0 0 3px rgba(25,118,210,.18);
-    }
-
-    .error{ color:#d32f2f; font-size:.82rem; min-height:16px; }
-
-    .actions{
-      grid-column: 1 / -1;
-      display:flex; align-items:center; justify-content:center; gap:12px;
-      margin-top:8px;
-    }
-    .btn{
-      min-width:160px; height:42px; padding:0 18px; border-radius:10px; cursor:pointer;
-      font-weight:600; font-size:.95rem; text-decoration:none; display:inline-flex; align-items:center; justify-content:center;
-      border:0; transition:.2s;
-    }
-    .btn.primary{ background:#1976d2; color:#fff; }
-    .btn.primary:hover{ background:#145aa6; box-shadow:0 3px 8px rgba(0,0,0,.15); }
-    .btn.secondary{ background:#f5f7f9; color:#333; border:1px solid #d5dbe3; text-decoration:none; }
-    .btn.secondary:hover{ background:#e9edf2; }
-
-    @media (max-width: 760px){
-      form{ grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/form.css?v=1">
+</head>
 </head>
 <body>
   <div class="card">
