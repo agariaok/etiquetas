@@ -1,0 +1,30 @@
+cuando realizamos un cambio en nuestro documento, entonces:
+    git status //me muestra los cambios que se realizaron
+
+para poder preparar todos los cambios(Enviar del direcctorio de trabajo al staging):
+    git add .
+
+para poder crear el commit y enviar (Enviar de staging al repositorio local):
+cada commit es una nueva version
+    git commit -m "descripcion"
+
+para poder mostrar los commit 
+    git log //muestra en texto
+    git log --graph //muestra en grafico
+    git log --oneline //muestra un listado 
+    git log --oneline --decorate --all --graph
+
+
+para poder cambiar de commit (versiones)
+lo primero es hacer un 
+    git log --online // no mostratra todos los commit
+luego podemos con el id pasar al commit de queremos
+    git checkout ID // a un commit 
+    git checkout master //al ultimo commit
+
+
+para poder enviar de un repositorio local a un remoto:
+    git remote add origin https://github.com/agariaok/etiquetas.git
+    git branch -M main
+    git push -u origin main
+
